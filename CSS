@@ -1,0 +1,196 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background: url('coffee-png.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+header h1 {
+    font-size: 2em;
+    color: #6b4226;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.nav-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #6b4226;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.nav-btn:hover {
+    background-color: #a89e0a;
+}
+
+section {
+    padding: 25px 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(168, 28, 28, 0.1);
+    background-color: rgba(141, 137, 131, 0.9);
+}
+#login-section { background-color: #8d8983;; }
+#admin-section { background-color: #8d8983; }
+#customer-section { background-color: #8d8983; }
+h2, h3, h4 {
+    color: #a75620;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+button {
+    padding: 11px 10px;
+    background-color: #915731;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+button:hover {
+    background-color: #92901e;
+}
+
+.radio-group {
+    margin-bottom: 15px;
+}
+.radio-group label {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.coffee-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.coffee-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.coffee-item:hover {
+    transform: translateY(-5px);
+}
+
+.coffee-img {
+    width: 100%;
+    max-width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.coffee-info {
+    text-align: center;
+}
+.coffee-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.coffee-price {
+    color: #6b4226;
+    font-weight: bold;
+}
+
+
+.receipt-details p {
+    margin-bottom: 8px;
+}
+.thank-you {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #6b4226;
+}
+
+
+.login-card, .menu-card, .customer-card {
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .coffee-item {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-btn {
+        width: 80%;
+        text-align: center;
+    }
+}
+footer {
+    background-color: #6b4226;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+footer a {
+    color: #f5e6d0;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
