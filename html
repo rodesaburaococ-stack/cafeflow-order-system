@@ -1,0 +1,128 @@
+    <div class="nav-buttons">
+        <a href="#login-section" class="nav-btn">Login</a>
+        <a href="#admin-section" class="nav-btn">Admin Panel</a>
+        <a href="#customer-section" class="nav-btn">Customer Order</a>
+    </div>
+
+    <section id="login-section">
+        <div class="login-card">
+            <h2>Login to Cafe System</h2>
+            <div class="radio-group">
+                <label><input type="radio" name="role" value="customer" checked> Customer</label>
+                <label><input type="radio" name="role" value="admin"> Admin</label>
+                <label><input type="radio" name="role" value="exit"> Exit</label>
+            </div>
+            <div class="input-group">
+                <label>Admin Password:</label>
+                <input type="password" placeholder="Enter password (1234)" maxlength="4">
+            </div>
+            <button class="action-btn">LOGIN</button>
+        </div>
+    </section>
+
+    <section id="admin-section">
+        <div class="menu-card">
+            <h2>--- ADMIN MENU ---</h2>
+            <div class="menu-options">
+                <button class="menu-btn">1. View Menu</button>
+                <button class="menu-btn">2. Add Coffee</button>
+                <button class="menu-btn">3. Change Price</button>
+                <button class="menu-btn">4. Back to Login</button>
+            </div>
+            <div class="coffee-list">
+                <div class="coffee-item"><span class="coffee-name">1. Nescafe</span><span class="coffee-price">₱30</span></div>
+                <div class="coffee-item"><span class="coffee-name">2. Kopiko Blanka</span><span class="coffee-price">₱45</span></div>
+                <div class="coffee-item"><span class="coffee-name">3. Creamy White</span><span class="coffee-price">₱25</span></div>
+                <div class="coffee-item"><span class="coffee-name">4. Coffee Mate</span><span class="coffee-price">₱38</span></div>
+                <div class="coffee-item"><span class="coffee-name">5. Greatest White</span><span class="coffee-price">₱36</span></div>
+                <div class="coffee-item"><span class="coffee-name">6. Kopiko Brown</span><span class="coffee-price">₱28</span></div>
+            </div>
+            <div class="input-group">
+                <label>New Coffee Name:</label>
+                <input type="text" placeholder="Enter new coffee name">
+            </div>
+            <div class="input-group">
+                <label>New Price:</label>
+                <input type="number" placeholder="Enter price" min="1">
+            </div>
+            <button class="action-btn">Add Coffee</button>
+        </div>
+    </section>
+        <h3>=== MENU ===</h3>
+    <div class="coffee-list">
+        <div class="coffee-item">
+            <img src="nescafe_black.png" alt="Nescafe" class="coffee-img">
+            <div class="coffee-info">
+                <span class="coffee-name">Nescafe</span>
+                <span class="coffee-price"><br>₱30</span>
+            </div>
+        </div>
+        <div class="coffee-item">
+            <img src="kopiko_blanca.png" alt="Kopiko Blanka" class="coffee-img">
+            <div class="coffee-info">
+                <span class="coffee-name">Kopiko Blanka</span>
+                <span class="coffee-price">₱45</span>
+            </div>
+        </div>
+        <div class="coffee-item">
+            <img src="creamy_white.png" alt="Creamy White" class="coffee-img">
+            <div class="coffee-info">
+                <span class="coffee-name">Creamy White</span>
+                <span class="coffee-price"><br>₱25</span>
+            </div>
+        </div>
+        <div class="coffee-item">
+            <img src="coffee_mate.png" alt="Coffee Mate" class="coffee-img">
+            <div class="coffee-info">
+                <span class="coffee-name">Coffee Mate</span>
+                <span class="coffee-price"><br>₱38</span>
+            </div>
+        </div>
+        <div class="coffee-item">
+            <img src="greatest_white.png" alt="Greatest White" class="coffee-img">
+            <div class="coffee-info">
+            <span class="coffee-name">Greatest White</span>
+            <span class="coffee-price">₱36</span>
+            </div>
+        </div>
+        <div class="coffee-item">
+            <img src="kopiko_brown.png" alt="Kopiko Brown" class="coffee-img">
+            <div class="coffee-info">
+            <span class="coffee-name">Kopiko Brown</span>
+            <span class="coffee-price"><br>₱28</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-inputs">
+        <div class="input-group">
+            <label>Select Coffee:</label>
+            <select>
+                <option>1. Nescafe - ₱30</option>
+                <option>2. Kopiko Blanka - ₱45</option>
+                <option>3. Creamy White - ₱25</option>
+                <option>4. Coffee Mate - ₱35</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label>Quantity:</label>
+            <input type="number" placeholder="1" min="1" max="50">
+        </div>
+    </div>
+
+    <button class="action-btn">Place Order</button>
+
+    <h4>=== RECEIPT ===</h4>
+    <div class="receipt-details">
+        <p><strong>Name:</strong> 
+            <span class="customer-name">GROUP | 8</span></p>
+        <p><strong>Table:</strong>
+            <span class="table-num">#5</span></p>
+        <p><strong>Order:</strong>
+            <span class="order-details">Nescafe x 2</span></p>
+        <p><strong>Total:</strong> 
+            <span class="total-amount">PHP 60</span></p>
+    </div>
+    <div class="thank-you">=== THANK YOU FOR PURCHASING ===</div>
+    <button class="action-btn" style="margin-top: 30px;">Order Again?</button>
+</div>
